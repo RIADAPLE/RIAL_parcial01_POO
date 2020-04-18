@@ -10,6 +10,7 @@ public class Main {
         ArrayList<PlazaFija> Datos = new ArrayList<>();
         ArrayList<ServicioProfesional> Dato = new ArrayList<>();
         byte buf = 0;
+        byte buf1 = 0;
 
         do {
             printMenu();
@@ -17,23 +18,53 @@ public class Main {
             info.nextLine();
             switch (buf) {
                 case 1:
+                    printMenu1();
+                    buf1 = info.nextByte(); info.nextLine();
+                    switch(buf1){
+                        case 1:
+                            System.out.println("Digite el nombre del empleado:");
+                            String name = info.nextLine();
 
-                    System.out.println("Digite el nombre del empleado:");
-                    String name = info.nextLine();
+                            String position = "Plaza Fija";
 
-                    System.out.println("Ingrese su puesto de trabajo:");
-                    String position = info.nextLine();
+                            System.out.println("Digite su salario: ");
+                            Double ingre = info.nextDouble(); info.nextLine();
 
-                    System.out.println("Digite su salario: ");
-                    Double ingre = info.nextDouble();
+                            System.out.println("Digite su extensión: ");
+                            int ext = info.nextInt(); info.nextLine();
 
-                    System.out.println("Digite su documento: ");
-                    String docu = info.nextLine();
+                            System.out.println("Digite su documento: ");
+                            String docu = info.nextLine();
 
-                    System.out.println("Digite su documento: ");
-                    String num = info.nextLine();
+                            System.out.println("Digite su número de documento: ");
+                            String num = info.nextLine();
 
-                    Datos.add(new Empleado(name,position,ingre));
+                            Datos.add(new PlazaFija(name,position,ingre,docu,num,ext));
+                            break;
+                        case 2:
+                            System.out.println("Digite el nombre del empleado:");
+                            String name1 = info.nextLine();
+
+                            String position1 = "Servicio Profesional";
+
+                            System.out.println("Digite su salario: ");
+                            Double ingre1 = info.nextDouble(); info.nextLine();
+
+                            System.out.println("Digite sus meses de contrato: ");
+                            int mes = info.nextInt(); info.nextLine();
+
+                            System.out.println("Digite su documento: ");
+                            String docu1 = info.nextLine();
+
+                            System.out.println("Digite su número de documento: ");
+                            String num1 = info.nextLine();
+
+                            Dato.add(new ServicioProfesional(name1,position1,ingre1,docu1,num1,mes));
+                            break;
+                        default:
+                            System.out.println("Opción errónea!");
+                            break;
+                    }
 
                     break;
                 case 2:
@@ -62,5 +93,12 @@ public class Main {
         System.out.println("5. Mostrar totales:");
         System.out.println("0. Salir.");
         System.out.print("Su opcion elegida es: ");
+    }
+
+    static void printMenu1(){
+        System.out.println("¿Qué puesto tiene el empleado que desea ingresar?");
+        System.out.println("1.Plaza fija");
+        System.out.println("2.Servicio profesional");
+        System.out.println("Su opción elegida es: ");
     }
 }
