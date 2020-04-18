@@ -2,18 +2,18 @@ package com.DARV.x00101519;
 
 public class ServicioProfesional extends Empleado {
 
-private int extension;
+private int mesesContrato;
 
-    public ServicioProfesional(String nombre, String puesto, double salario, int extension) {
+    public ServicioProfesional(String nombre, String puesto, double salario, int mesesContrato) {
         super(nombre, puesto, salario);
-        this.extension = extension;
+        this.mesesContrato = mesesContrato;
     }
 
-    public int getExtension() {
-        return extension;
+    public int getmesesContrato() {
+        return mesesContrato;
     }
 
-    public void setExtension(int extension) {
-        this.extension = extension;
+    public void setmesesContrato(int mesesContrato) {
+        this.mesesContrato = mesesContrato;
     }
 }
