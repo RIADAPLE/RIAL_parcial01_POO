@@ -1,7 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4cf65780-1e6d-4060-afa3-c6c07012e90d" name="Default Changelist" comment="" />
+    <list default="true" id="4cf65780-1e6d-4060-afa3-c6c07012e90d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/CalculadoraImpuestos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/Empleado.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/Empresa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/PlazaFija.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/ServicioProfesional.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/Documento.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/Documento.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/PlazaFija.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/PlazaFija.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/ServicioProfesional.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/ServicioProfesional.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,16 +31,21 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1afypdLp1NaYSsPCqgdbaNZaE0d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="node.js.detected.package.eslint" value="true" />
@@ -64,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1587141126350</updated>
       <workItem from="1587141132684" duration="4650000" />
+      <workItem from="1587248416690" duration="3795000" />
     </task>
     <servers />
   </component>
@@ -71,25 +91,25 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1587144975274">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser" timestamp="1587252060787">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587144975274" />
-    <state width="1492" height="210" key="GridCell.Tab.0.bottom" timestamp="1587143463952">
+    <state x="574" y="128" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587252060787" />
+    <state width="1492" height="210" key="GridCell.Tab.0.bottom" timestamp="1587252022522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587143463952" />
-    <state width="1492" height="210" key="GridCell.Tab.0.center" timestamp="1587143463951">
+    <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587252022522" />
+    <state width="1492" height="210" key="GridCell.Tab.0.center" timestamp="1587252022522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587143463951" />
-    <state width="1492" height="210" key="GridCell.Tab.0.left" timestamp="1587143463951">
+    <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587252022522" />
+    <state width="1492" height="210" key="GridCell.Tab.0.left" timestamp="1587252022522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587143463951" />
-    <state width="1492" height="210" key="GridCell.Tab.0.right" timestamp="1587143463952">
+    <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587252022522" />
+    <state width="1492" height="210" key="GridCell.Tab.0.right" timestamp="1587252022522">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587143463952" />
+    <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587252022522" />
   </component>
 </project>

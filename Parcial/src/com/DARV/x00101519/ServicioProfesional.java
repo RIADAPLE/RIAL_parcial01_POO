@@ -4,8 +4,8 @@ public class ServicioProfesional extends Empleado {
 
 private int mesesContrato;
 
-    public ServicioProfesional(String nombre, String puesto, double salario, int mesesContrato) {
-        super(nombre, puesto, salario);
+    public ServicioProfesional(String nombre, String puesto, double salario, String tipodoc, String numdoc, int mesesContrato) {
+        super(nombre, puesto, salario, tipodoc, numdoc);
         this.mesesContrato = mesesContrato;
     }
 

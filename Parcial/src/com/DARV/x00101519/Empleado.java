@@ -6,13 +6,14 @@ import java.util.List;
 public class Empleado {
 protected String nombre;
 protected String puesto;
-protected List<Documento> Documento=new ArrayList<Documento>();
+protected ArrayList<Documento> Documento=new ArrayList<>();
 protected double salario;
 
-    public Empleado(String nombre, String puesto, double salario) {
+    public Empleado(String nombre, String puesto, double salario,String tipodoc,String numdoc) {
         this.nombre = nombre;
         this.puesto = puesto;
         this.salario = salario;
+        Documento.add(new Documento(tipodoc,numdoc));
     }
 
     public String getNombre() {
@@ -43,5 +44,15 @@ protected double salario;
 
     public void setSalario(double salario) {
         this.salario = salario;
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" +
+                "nombre='" + nombre + '\'' +
+                ", puesto='" + puesto + '\'' +
+                ", Documento=" + Documento +
+                ", salario=" + salario +
+                '}';
     }
 }
