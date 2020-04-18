@@ -26,6 +26,7 @@ public class Main {
                             String name = info.nextLine();
 
                             String position = "Plaza Fija";
+<<<<<<< HEAD
 
                             System.out.println("Digite su salario: ");
                             Double ingre = info.nextDouble(); info.nextLine();
@@ -59,6 +60,41 @@ public class Main {
                             System.out.println("Digite su número de documento: ");
                             String num1 = info.nextLine();
 
+=======
+
+                            System.out.println("Digite su salario: ");
+                            Double ingre = info.nextDouble(); info.nextLine();
+
+                            System.out.println("Digite su extensión: ");
+                            int ext = info.nextInt(); info.nextLine();
+
+                            System.out.println("Digite su documento: ");
+                            String docu = info.nextLine();
+
+                            System.out.println("Digite su número de documento: ");
+                            String num = info.nextLine();
+
+                            Datos.add(new PlazaFija(name,position,ingre,docu,num,ext));
+                            break;
+                        case 2:
+                            System.out.println("Digite el nombre del empleado:");
+                            String name1 = info.nextLine();
+
+                            String position1 = "Servicio Profesional";
+
+                            System.out.println("Digite su salario: ");
+                            Double ingre1 = info.nextDouble(); info.nextLine();
+
+                            System.out.println("Digite sus meses de contrato: ");
+                            int mes = info.nextInt(); info.nextLine();
+
+                            System.out.println("Digite su documento: ");
+                            String docu1 = info.nextLine();
+
+                            System.out.println("Digite su número de documento: ");
+                            String num1 = info.nextLine();
+
+>>>>>>> 5990c4e077eb4c90787ef14123c47f54faa2feaf
                             Dato.add(new ServicioProfesional(name1,position1,ingre1,docu1,num1,mes));
                             break;
                         default:
