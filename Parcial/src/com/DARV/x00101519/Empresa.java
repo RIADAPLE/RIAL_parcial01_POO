@@ -1,11 +1,10 @@
 package com.DARV.x00101519;
 
-import java.util.List;
 import java.util.ArrayList;
 
 public class Empresa {
     private String nombre;
-    private  List<Empleado> Planilla=new ArrayList<Empleado>();
+    private ArrayList<Empleado> Planilla = new ArrayList<>();
 
     public Empresa(String nombre) {
         this.nombre = nombre;
@@ -15,7 +14,7 @@ public class Empresa {
         return nombre;
     }
 
-    public List<Empleado> getPlanilla() {
+    public ArrayList <Empleado> getPlanilla() {
         return Planilla;
     }
 
