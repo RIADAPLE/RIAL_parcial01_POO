@@ -23,7 +23,7 @@ protected double salario;
         return puesto;
     }
 
-    public List<Documento> getDocumento() {
+    public ArrayList<Documento> getDocumento() {
         return Documento;
     }
 
