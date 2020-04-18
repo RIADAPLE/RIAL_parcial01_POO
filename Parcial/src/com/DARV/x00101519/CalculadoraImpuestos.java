@@ -44,4 +44,10 @@ public class CalculadoraImpuestos {
         }
     }
 
+    public void mostrarTotales(){
+        System.out.println(this.totalRenta);
+        System.out.println(this.totalISSS);
+        System.out.println(this.totalAFP);
+    }
+
 }
