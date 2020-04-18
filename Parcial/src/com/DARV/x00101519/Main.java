@@ -1,11 +1,14 @@
 package com.DARV.x00101519;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Main {
 
 
     public static void main(String[] args) {
         Scanner info = new Scanner(System.in);
+        ArrayList<PlazaFija> Datos = new ArrayList<>();
+        ArrayList<ServicioProfesional> Dato = new ArrayList<>();
         byte buf = 0;
 
         do {
@@ -14,6 +17,23 @@ public class Main {
             info.nextLine();
             switch (buf) {
                 case 1:
+
+                    System.out.println("Digite el nombre del empleado:");
+                    String name = info.nextLine();
+
+                    System.out.println("Ingrese su puesto de trabajo:");
+                    String position = info.nextLine();
+
+                    System.out.println("Digite su salario: ");
+                    Double ingre = info.nextDouble();
+
+                    System.out.println("Digite su documento: ");
+                    String docu = info.nextLine();
+
+                    System.out.println("Digite su documento: ");
+                    String num = info.nextLine();
+
+                    Datos.add(new Empleado(name,position,ingre));
 
                     break;
                 case 2:
