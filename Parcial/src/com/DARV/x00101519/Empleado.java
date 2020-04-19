@@ -3,7 +3,7 @@ package com.DARV.x00101519;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Empleado {
+abstract class Empleado {
 protected String nombre;
 protected String puesto;
 protected ArrayList<Documento> Documento=new ArrayList<>();
@@ -45,8 +45,5 @@ protected double salario;
     public void setSalario(double salario) {
         this.salario = salario;
     }
-<<<<<<< HEAD
 
-=======
->>>>>>> 5adb82d1978f7c8c2934321797008164166704c6
 }
