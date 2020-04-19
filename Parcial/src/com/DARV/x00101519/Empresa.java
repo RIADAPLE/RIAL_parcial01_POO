@@ -2,6 +2,7 @@ package com.DARV.x00101519;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+
 import java.util.InputMismatchException;
 
 public class Empresa {
@@ -44,6 +45,10 @@ public class Empresa {
                     continua = true;
                 }
             } while (continua);*/
+
+        switch(buf1){
+            case 1:
+
                 System.out.println("Digite el nombre del empleado:");
                 String name = info.nextLine();
 
@@ -107,5 +112,16 @@ public class Empresa {
                 continua = true;
             }
        System.out.print("Su opción elegida es: ");
+
+    public void quitEmplado(String name) {
+        Datos.removeIf(s -> s.getNombre().equals(name));
+        Dato.removeIf(s -> s.getNombre().equals(name));
+    }
+    static void printMenu1(){
+        System.out.println("\n¿Qué puesto tiene el empleado que desea ingresar?");
+        System.out.println("1.Plaza fija");
+        System.out.println("2.Servicio profesional");
+        System.out.print("Su opción elegida es: ");
+
     }
 }

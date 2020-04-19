@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4cf65780-1e6d-4060-afa3-c6c07012e90d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/Empleado.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Parcial/com/DARV/x00101519/Empleado.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/CalculadoraImpuestos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/CalculadoraImpuestos.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/Empresa.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/DARV/x00101519/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/DARV/x00101519/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +75,7 @@
       <workItem from="1587248416690" duration="6182000" />
       <workItem from="1587254904139" duration="6259000" />
       <workItem from="1587267218696" duration="67000" />
-      <workItem from="1587331285140" duration="6174000" />
+      <workItem from="1587331285140" duration="6421000" />
     </task>
     <servers />
   </component>
