@@ -1,6 +1,7 @@
 package com.DARV.x00101519;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Main {
 
@@ -16,11 +17,14 @@ public class Main {
         String Empresita = info.nextLine();
         Empresa Empres = new Empresa(Empresita);
 
-        do {
+        do {try{
             System.out.println("----"+Empres.getNombre()+"----");
             printMenu();
             buf = info.nextByte();
-            info.nextLine();
+            info.nextLine();}
+        catch (InputMismatchException ex) {
+            System.out.println("Debe ingresar obligatoriamente un número entero.");
+        }
             switch (buf) {
                 case 1:
                     Empres.addEmplado();
@@ -34,8 +38,11 @@ public class Main {
                 case 3:
                     Datos = Empres.getPlanilla1();
                     Dato = Empres.getPlanilla2();
-                    Datos.forEach(PlazaFija -> System.out.println(PlazaFija.toString()));
-                    Dato.forEach(ServicioProfesional -> System.out.println(ServicioProfesional.toString()));
+                    Datos.forEach(PlazaFija -> {System.out.println(PlazaFija.toString());
+                    PlazaFija.mostrardocu();
+                    });
+                    Dato.forEach(ServicioProfesional -> {System.out.println(ServicioProfesional.toString());
+                    ServicioProfesional.mostrardocu();});
                     break;
                 case 4:
                     System.out.println("Introduzca el nombre del empleado al cual le quiere calcular el sueldo: ");
@@ -57,10 +64,11 @@ public class Main {
                     System.out.println("Mostrando totales: ");
                     calcu.mostrarTotales();
                     break;
-                case 6:
-
+                default:
+                    System.out.println("Opción errónea!");
                     break;
-            }
+                }
+
         } while (buf != 0);
     }
     static void printMenu () {

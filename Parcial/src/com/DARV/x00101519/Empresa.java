@@ -1,9 +1,8 @@
 package com.DARV.x00101519;
 
 import java.util.ArrayList;
-import java.util.Scanner;
-
 import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Empresa {
     private String nombre;
@@ -26,29 +25,15 @@ public class Empresa {
 
     public void addEmplado( ) {
         byte buf1 = 0;
-        printMenu1();
-        buf1 = info.nextByte(); info.nextLine();
+        boolean continua = false;
+            try{printMenu1();
+                buf1 = info.nextByte(); info.nextLine();}
+            catch (InputMismatchException ex) {
+                System.out.println("Debe ingresar obligatoriamente un número entero.");
+            }
 
         switch(buf1){
-            case 1:
-            /*boolean continua = false;
-            do {
-                try {
-                    continua = false;
-                    System.out.println("1.Plaza fija");
-                    int op1 = info.nextInt();
-                    System.out.println("2.Servicio profesional");
-                    int op2 = info.nextInt();
-                } catch (InputMismatchException ex) {
-                    System.out.println("Debe ingresar obligatoriamente un número entero.");
-                    info.next();
-                    continua = true;
-                }
-            } while (continua);*/
-
-        switch(buf1){
-            case 1:
-
+            case 1:try{
                 System.out.println("Digite el nombre del empleado:");
                 String name = info.nextLine();
 
@@ -66,9 +51,12 @@ public class Empresa {
                 System.out.println("Digite su número de documento: ");
                 String num = info.nextLine();
 
-                Datos.add(new PlazaFija(name,position,ingre,docu,num,ext));
+                Datos.add(new PlazaFija(name,position,ingre,docu,num,ext));}
+            catch (InputMismatchException ex) {
+                System.out.println("Debe ingresar obligatoriamente un número entero en esa categoría!");
+            }
                 break;
-            case 2:
+            case 2:try{
                 System.out.println("Digite el nombre del empleado:");
                 String name1 = info.nextLine();
 
@@ -86,7 +74,10 @@ public class Empresa {
                 System.out.println("Digite su número de documento: ");
                 String num1 = info.nextLine();
 
-                Dato.add(new ServicioProfesional(name1,position1,ingre1,docu1,num1,mes));
+                Dato.add(new ServicioProfesional(name1,position1,ingre1,docu1,num1,mes));}
+                catch (InputMismatchException ex) {
+                    System.out.println("Debe ingresar obligatoriamente un número entero en esa categoría!");
+                }
                 break;
             default:
                 System.out.println("Opción errónea!");
@@ -100,28 +91,8 @@ public class Empresa {
     }
     private void printMenu1(){
         System.out.println("\n¿Qué puesto tiene el empleado que desea ingresar?");
-        boolean continua = false;
-
-            try {
-                continua = false;
-                System.out.println("1.Plaza fija" + "\n" + "2.Servicio profesional" );
-                int op1 = info.nextInt();
-                } catch (InputMismatchException ex) {
-                System.out.println("Debe ingresar obligatoriamente un número entero.");
-                info.next();
-                continua = true;
-            }
-       System.out.print("Su opción elegida es: ");
-
-    public void quitEmplado(String name) {
-        Datos.removeIf(s -> s.getNombre().equals(name));
-        Dato.removeIf(s -> s.getNombre().equals(name));
-    }
-    static void printMenu1(){
-        System.out.println("\n¿Qué puesto tiene el empleado que desea ingresar?");
         System.out.println("1.Plaza fija");
         System.out.println("2.Servicio profesional");
         System.out.print("Su opción elegida es: ");
-
     }
 }

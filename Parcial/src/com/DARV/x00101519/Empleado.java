@@ -13,7 +13,6 @@ protected double salario;
         this.nombre = nombre;
         this.puesto = puesto;
         this.salario = salario;
-        Documento.add(new Documento(tipodoc,numdoc));
     }
 
     public String getNombre() {
@@ -45,5 +44,4 @@ protected double salario;
     public void setSalario(double salario) {
         this.salario = salario;
     }
-
 }
