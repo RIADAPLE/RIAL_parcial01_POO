@@ -11,6 +11,7 @@ public class Main {
         ArrayList<ServicioProfesional> Dato = new ArrayList<>();
         byte buf = 0;
         byte buf1 = 0;
+        CalculadoraImpuestos calcu = new CalculadoraImpuestos(0,0,0);
 
         do {
             printMenu();
@@ -79,7 +80,18 @@ public class Main {
                     Dato.forEach(ServicioProfesional -> System.out.println(ServicioProfesional.toString()));
                     break;
                 case 4:
-
+                    System.out.println("Introduzca el nombre del empleado al cual le quiere calcular el sueldo: ");
+                    String name1 = info.nextLine();
+                    Datos.forEach(s -> {
+                        if (name1.equalsIgnoreCase(s.getNombre())) {
+                            System.out.println("$"+calcu.calcularPago(s));
+                        }
+                    });
+                    Dato.forEach(s -> {
+                        if (name1.equalsIgnoreCase(s.getNombre())) {
+                            System.out.println("$"+calcu.calcularPago(s));
+                        }
+                    });
                     break;
                 case 5:
                     break;

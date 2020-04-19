@@ -19,9 +19,8 @@ public class CalculadoraImpuestos {
         }
         else{
             this.totalAFP += x*0.0625;
-            x = x*0.9375;
             this.totalISSS += x*0.03;
-            x = x*9075;
+            x =x- (x*0.0625+x*0.03);
             if(x>=0.01 && x<=472.00){
                 this.totalRenta += 0;
                 return x;
