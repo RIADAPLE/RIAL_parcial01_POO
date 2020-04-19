@@ -76,11 +76,17 @@ public class Main {
                     System.out.println("Eliminando...");
                     break;
                 case 3:
+<<<<<<< HEAD
 
                     Datos.forEach(PlazaFija -> System.out.println(PlazaFija.toString()));
                     Dato.forEach(ServicioProfesional -> System.out.println(ServicioProfesional.toString()));
                     break;
 
+=======
+                    Datos.forEach(PlazaFija -> System.out.println(PlazaFija.toString()));
+                    Dato.forEach(ServicioProfesional -> System.out.println(ServicioProfesional.toString()));
+                    break;
+>>>>>>> 5adb82d1978f7c8c2934321797008164166704c6
                 case 4:
                     System.out.println("Introduzca el nombre del empleado al cual le quiere calcular el sueldo: ");
                     String name1 = info.nextLine();
@@ -96,8 +102,11 @@ public class Main {
                     });
                     break;
                 case 5:
+<<<<<<< HEAD
                     System.out.println("Mostrando totales: ");
                     CalculadoraImpuestos.mostrarTotales();
+=======
+>>>>>>> 5adb82d1978f7c8c2934321797008164166704c6
                     break;
                 case 6:
                     break;

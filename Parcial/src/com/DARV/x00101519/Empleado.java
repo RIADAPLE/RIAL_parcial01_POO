@@ -45,5 +45,8 @@ protected double salario;
     public void setSalario(double salario) {
         this.salario = salario;
     }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5adb82d1978f7c8c2934321797008164166704c6
 }

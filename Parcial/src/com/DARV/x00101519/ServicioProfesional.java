@@ -28,3 +28,21 @@
              }
         }
 
+<<<<<<< HEAD
+=======
+    public void setmesesContrato(int mesesContrato) {
+        this.mesesContrato = mesesContrato;
+    }
+
+    @Override
+    public String toString() {
+        return "\nServicio Profesional" +
+                "\n Meses de Contrato: " + mesesContrato +
+                "\n nombre: " + nombre +
+                "\n puesto: " + puesto +
+                "\n Documento: " + Documento +
+                "\n salario: $" + salario + "\n";
+         }
+    }
+
+>>>>>>> 5adb82d1978f7c8c2934321797008164166704c6
