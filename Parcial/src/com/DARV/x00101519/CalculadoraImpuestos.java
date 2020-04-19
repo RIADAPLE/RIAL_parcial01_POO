@@ -1,9 +1,9 @@
 package com.DARV.x00101519;
 
-public class CalculadoraImpuestos {
-    private double totalRenta;
-    private double totalISSS;
-    private double totalAFP;
+public final class CalculadoraImpuestos {
+    private static double totalRenta;
+    private static double totalISSS;
+    private static double totalAFP;
 
     public CalculadoraImpuestos(double totalRenta, double totalISSS, double totalAFP) {
         this.totalRenta = totalRenta;
@@ -19,9 +19,8 @@ public class CalculadoraImpuestos {
         }
         else{
             this.totalAFP += x*0.0625;
-            x = x*0.9375;
             this.totalISSS += x*0.03;
-            x = x*9075;
+            x =x- (x*0.0625+x*0.03);
             if(x>=0.01 && x<=472.00){
                 this.totalRenta += 0;
                 return x;
@@ -44,10 +43,10 @@ public class CalculadoraImpuestos {
         }
     }
 
-    public void mostrarTotales(){
-        System.out.println(this.totalRenta);
-        System.out.println(this.totalISSS);
-        System.out.println(this.totalAFP);
+    public static void mostrarTotales(){
+        System.out.println(totalRenta);
+        System.out.println(totalISSS);
+        System.out.println(totalAFP);
     }
 
 }

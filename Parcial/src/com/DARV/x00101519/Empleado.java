@@ -46,13 +46,4 @@ protected double salario;
         this.salario = salario;
     }
 
-    @Override
-    public String toString() {
-        return "Empleado{" +
-                "nombre='" + nombre + '\'' +
-                ", puesto='" + puesto + '\'' +
-                ", Documento=" + Documento +
-                ", salario=" + salario +
-                '}';
-    }
 }

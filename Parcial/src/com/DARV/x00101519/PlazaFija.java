@@ -18,4 +18,14 @@ private int extension;
     public void setExtension(int extension) {
         this.extension = extension;
     }
+
+    @Override
+    public String toString() {
+        return "\nPlaza Fija" +
+                "\n extension: " + extension +
+                "\n nombre: " + nombre +
+                "\n puesto: " + puesto +
+                "\n Documento: " + Documento +
+                "\n salario: $" + salario + "\n";
+    }
 }
