@@ -16,4 +16,15 @@ private int mesesContrato;
     public void setmesesContrato(int mesesContrato) {
         this.mesesContrato = mesesContrato;
     }
-}
+
+    @Override
+    public String toString() {
+        return "\nServicio Profesional" +
+                "\n Meses de Contrato: " + mesesContrato +
+                "\n nombre: " + nombre +
+                "\n puesto: " + puesto +
+                "\n Documento: " + Documento +
+                "\n salario: $" + salario + "\n";
+         }
+    }
+

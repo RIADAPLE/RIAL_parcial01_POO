@@ -26,7 +26,6 @@ public class Main {
                             String name = info.nextLine();
 
                             String position = "Plaza Fija";
-<<<<<<< HEAD
 
                             System.out.println("Digite su salario: ");
                             Double ingre = info.nextDouble(); info.nextLine();
@@ -60,41 +59,6 @@ public class Main {
                             System.out.println("Digite su número de documento: ");
                             String num1 = info.nextLine();
 
-=======
-
-                            System.out.println("Digite su salario: ");
-                            Double ingre = info.nextDouble(); info.nextLine();
-
-                            System.out.println("Digite su extensión: ");
-                            int ext = info.nextInt(); info.nextLine();
-
-                            System.out.println("Digite su documento: ");
-                            String docu = info.nextLine();
-
-                            System.out.println("Digite su número de documento: ");
-                            String num = info.nextLine();
-
-                            Datos.add(new PlazaFija(name,position,ingre,docu,num,ext));
-                            break;
-                        case 2:
-                            System.out.println("Digite el nombre del empleado:");
-                            String name1 = info.nextLine();
-
-                            String position1 = "Servicio Profesional";
-
-                            System.out.println("Digite su salario: ");
-                            Double ingre1 = info.nextDouble(); info.nextLine();
-
-                            System.out.println("Digite sus meses de contrato: ");
-                            int mes = info.nextInt(); info.nextLine();
-
-                            System.out.println("Digite su documento: ");
-                            String docu1 = info.nextLine();
-
-                            System.out.println("Digite su número de documento: ");
-                            String num1 = info.nextLine();
-
->>>>>>> 5990c4e077eb4c90787ef14123c47f54faa2feaf
                             Dato.add(new ServicioProfesional(name1,position1,ingre1,docu1,num1,mes));
                             break;
                         default:
@@ -104,20 +68,20 @@ public class Main {
 
                     break;
                 case 2:
-                    System.out.println("Introduzca el nombre del empledo que quiere eliminar:");
+                    System.out.println("Introduzca el nombre del empleado que quiere eliminar:");
                     String name = info.nextLine();
                     Datos.removeIf(s -> s.getNombre().equals(name));
+                    Dato.removeIf(s -> s.getNombre().equals(name));
                     System.out.println("Eliminando...");
                     break;
                 case 3:
-                    Datos.forEach(Empleado -> System.out.println(Empleado.toString()));
-                    Dato.forEach(Empleado -> System.out.println(Empleado.toString()));
+                    Datos.forEach(PlazaFija -> System.out.println(PlazaFija.toString()));
+                    Dato.forEach(ServicioProfesional -> System.out.println(ServicioProfesional.toString()));
                     break;
                 case 4:
 
                     break;
                 case 5:
-
                     break;
                 case 6:
 
@@ -137,9 +101,9 @@ public class Main {
     }
 
     static void printMenu1(){
-        System.out.println("¿Qué puesto tiene el empleado que desea ingresar?");
+        System.out.println("\n¿Qué puesto tiene el empleado que desea ingresar?");
         System.out.println("1.Plaza fija");
         System.out.println("2.Servicio profesional");
-        System.out.println("Su opción elegida es: ");
+        System.out.print("Su opción elegida es: ");
     }
 }
